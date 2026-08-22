@@ -1,0 +1,223 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+
+  font-family: var(--font-family);
+
+  background: var(--background-color);
+
+  color: var(--text-primary);
+
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   ROOT
+========================= */
+
+#root {
+  min-height: 100vh;
+}
+
+/* =========================
+   COMMON CONTAINER
+========================= */
+
+.container {
+  width: 86%;
+  max-width: var(--container-width);
+
+  margin: 0 auto;
+}
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.section {
+  padding: var(--spacing-3xl) 0;
+}
+
+/* =========================
+   COMMON SECTION HEADING
+========================= */
+
+.section-heading {
+  margin-bottom: var(--spacing-xl);
+}
+
+.section-heading span {
+  color: var(--primary-color);
+
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.section-heading h2 {
+  margin-top: var(--spacing-sm);
+
+  color: var(--text-primary);
+
+  font-size: var(--font-size-xl);
+}
+
+/* =========================
+   COMMON BUTTON
+========================= */
+
+.primary-button {
+  padding: 11px 18px;
+
+  border: none;
+  border-radius: var(--radius-md);
+
+  background: var(--primary-color);
+
+  color: #ffffff;
+
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+
+  transition: var(--transition-fast);
+}
+
+.primary-button:hover {
+  background: var(--primary-dark);
+}
+
+.secondary-button {
+  padding: 10px 17px;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+
+  background: var(--surface-color);
+
+  color: var(--primary-color);
+
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+
+  transition: var(--transition-fast);
+}
+
+.secondary-button:hover {
+  background: var(--primary-light);
+}
+
+/* =========================
+   COMMON CARD
+========================= */
+
+.card {
+  padding: var(--spacing-xl);
+
+  background: var(--surface-color);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  transition: var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: var(--shadow-md);
+}
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
+/* =========================
+   UTILITY CLASSES
+========================= */
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-primary-color {
+  color: var(--primary-color);
+}
+
+.hidden {
+  display: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .section {
+    padding: 45px 0;
+  }
+}

@@ -1,0 +1,81 @@
+const scholarships = [
+  {
+    id: 1,
+    title: "National Scholarship Program",
+    provider: "Government of India",
+    amount: "₹50,000",
+    amountValue: 50000,
+    category: "Merit Based",
+    level: "Undergraduate",
+    eligibility: "Undergraduate Students",
+    deadline: "30 September 2026",
+    status: "Open",
+  },
+
+  {
+    id: 2,
+    title: "Central Sector Scholarship",
+    provider: "Ministry of Education",
+    amount: "₹20,000",
+    amountValue: 20000,
+    category: "Merit Based",
+    level: "Undergraduate",
+    eligibility: "UG Students",
+    deadline: "15 October 2026",
+    status: "Open",
+  },
+
+  {
+    id: 3,
+    title: "AICTE Pragati Scholarship",
+    provider: "AICTE",
+    amount: "₹50,000 / Year",
+    amountValue: 50000,
+    category: "Technical Education",
+    level: "Undergraduate",
+    eligibility: "Women Students",
+    deadline: "31 October 2026",
+    status: "Open",
+  },
+
+  {
+    id: 4,
+    title: "AICTE Saksham Scholarship",
+    provider: "AICTE",
+    amount: "₹50,000 / Year",
+    amountValue: 50000,
+    category: "Technical Education",
+    level: "Undergraduate",
+    eligibility: "Students with Disabilities",
+    deadline: "31 October 2026",
+    status: "Open",
+  },
+
+  {
+    id: 5,
+    title: "State Government Scholarship",
+    provider: "Telangana Government",
+    amount: "₹35,000",
+    amountValue: 35000,
+    category: "State Scholarship",
+    level: "Undergraduate",
+    eligibility: "State Students",
+    deadline: "30 November 2026",
+    status: "Open",
+  },
+
+  {
+    id: 6,
+    title: "Merit Excellence Scholarship",
+    provider: "Education Foundation",
+    amount: "₹1,00,000",
+    amountValue: 100000,
+    category: "Merit Based",
+    level: "Undergraduate",
+    eligibility: "High Achieving Students",
+    deadline: "15 December 2026",
+    status: "Open",
+  },
+];
+
+export default scholarships;

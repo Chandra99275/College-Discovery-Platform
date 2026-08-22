@@ -1,0 +1,493 @@
+/* =========================================================
+   COLLEGE FINDER - PREMIUM FOOTER
+   ========================================================= */
+
+.footer {
+  position: relative;
+
+  margin-top: 80px;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(79, 70, 229, 0.18),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(6, 182, 212, 0.12),
+      transparent 25%
+    ),
+    #07111f;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP GLOW
+   ========================================================= */
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #6366f1,
+      #06b6d4,
+      #6366f1,
+      transparent
+    );
+}
+
+
+/* =========================================================
+   FOOTER CONTAINER
+   ========================================================= */
+
+.footer-container {
+  width: min(1400px, 92%);
+
+  margin: 0 auto;
+
+  padding: 75px 0 60px;
+
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1fr
+    1fr;
+
+  gap: 50px;
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.footer-brand {
+  max-width: 360px;
+}
+
+
+/* Logo */
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+
+  text-decoration: none;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.6px;
+}
+
+.footer-logo > span:first-child {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4f46e5,
+      #6366f1,
+      #06b6d4
+    );
+
+  font-size: 21px;
+
+  box-shadow:
+    0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+
+/* CollegeFinder accent */
+
+.footer-logo span span {
+  color: #818cf8;
+}
+
+
+/* Description */
+
+.footer-brand p {
+  margin: 0;
+
+  max-width: 330px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   EXPLORE BUTTON
+   ========================================================= */
+
+.footer-explore-btn {
+  display: inline-flex;
+  align-items: center;
+
+  margin-top: 24px;
+
+  padding: 11px 18px;
+
+  border: 1px solid rgba(129, 140, 248, 0.25);
+
+  border-radius: 10px;
+
+  background:
+    rgba(99, 102, 241, 0.10);
+
+  color: #c7d2fe;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.footer-explore-btn:hover {
+  background: #4f46e5;
+
+  border-color: #6366f1;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(79, 70, 229, 0.25);
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+   ========================================================= */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* Heading */
+
+.footer-column h4 {
+  position: relative;
+
+  margin: 4px 0 23px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* Heading underline */
+
+.footer-column h4::after {
+  content: "";
+
+  display: block;
+
+  margin-top: 9px;
+
+  width: 28px;
+  height: 2px;
+
+  border-radius: 5px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #6366f1,
+      #06b6d4
+    );
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.footer-column a {
+  position: relative;
+
+  width: fit-content;
+
+  margin-bottom: 13px;
+
+  color: #94a3b8;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.footer-column a::before {
+  content: "";
+
+  position: absolute;
+
+  left: -12px;
+  top: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #6366f1;
+
+  opacity: 0;
+
+  transform: translateY(-50%);
+
+  transition: opacity 0.25s ease;
+}
+
+
+.footer-column a:hover {
+  color: #ffffff;
+
+  transform: translateX(7px);
+}
+
+
+.footer-column a:hover::before {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   BOTTOM SECTION
+   ========================================================= */
+
+.footer-bottom {
+  width: min(1400px, 92%);
+
+  margin: 0 auto;
+
+  min-height: 75px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top:
+    1px solid rgba(148, 163, 184, 0.12);
+}
+
+
+/* Copyright */
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+   ========================================================= */
+
+.footer-socials {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 75px;
+
+  padding: 8px 12px;
+
+  border:
+    1px solid rgba(148, 163, 184, 0.15);
+
+  border-radius: 8px;
+
+  background:
+    rgba(255, 255, 255, 0.03);
+
+  color: #94a3b8;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+
+.footer-socials a:hover {
+  color: #ffffff;
+
+  border-color: rgba(129, 140, 248, 0.4);
+
+  background:
+    rgba(99, 102, 241, 0.12);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .footer-container {
+    grid-template-columns:
+      2fr
+      1fr
+      1fr
+      1fr;
+
+    gap: 35px;
+  }
+
+  .footer-brand {
+    grid-column: span 4;
+
+    max-width: 600px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .footer-container {
+    padding: 55px 0 40px;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 40px 25px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-brand p {
+    max-width: 500px;
+  }
+
+  .footer-bottom {
+    padding: 22px 0;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    min-height: auto;
+  }
+
+  .footer-socials {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .footer-column {
+    padding-top: 5px;
+  }
+
+  .footer-socials {
+    flex-wrap: wrap;
+  }
+
+  .footer-socials a {
+    min-width: 65px;
+  }
+
+}

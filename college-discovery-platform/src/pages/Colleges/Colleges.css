@@ -1,0 +1,288 @@
+/* ==========================
+   Colleges Page
+========================== */
+
+.colleges-page {
+  background: #f5f7fb;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================
+   Banner Section
+========================== */
+
+.college-banner {
+  background: linear-gradient(135deg, #4338ca, #6366f1);
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.college-banner h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.college-banner p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  color: #e5e7ff;
+}
+
+/* Search */
+
+.search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: white;
+}
+
+/* ==========================
+   Filter Section
+========================== */
+
+.filters-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 35px auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filters-section select {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  font-size: 14px;
+  min-width: 180px;
+  cursor: pointer;
+}
+
+.filters-section button {
+  background: #4338ca;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters-section button:hover {
+  background: #312e81;
+}
+
+/* ==========================
+   Result Count
+========================== */
+
+.college-count {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.college-count h2 {
+  color: #1f2937;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* ==========================
+   College Grid
+========================== */
+
+.college-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding-bottom: 60px;
+}
+
+/* ==========================
+   College Card
+========================== */
+
+.college-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.college-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(67, 56, 202, 0.15);
+}
+
+/* College Image */
+
+.college-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: #eef2ff;
+}
+
+.college-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.college-card:hover .college-image img {
+  transform: scale(1.08);
+}
+
+/* College Content */
+
+.college-content {
+  padding: 18px;
+}
+
+.category {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #4338ca;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.college-content h3 {
+  font-size: 18px;
+  color: #111827;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  min-height: 55px;
+}
+
+.location {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Rating & Fees */
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.details span:first-child {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.details span:last-child {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Package */
+
+.package {
+  font-size: 13px;
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+.package strong {
+  color: #059669;
+}
+
+/* View Button */
+
+.view-btn {
+  width: 100%;
+  padding: 11px;
+  background: #4338ca;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #312e81;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+
+@media (max-width: 1200px) {
+  .college-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .college-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .college-banner h1 {
+    font-size: 34px;
+  }
+
+  .college-banner p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .college-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters-section select,
+  .filters-section button {
+    width: 100%;
+  }
+
+  .college-banner {
+    padding: 50px 20px;
+  }
+
+  .college-banner h1 {
+    font-size: 28px;
+  }
+
+  .college-banner p {
+    font-size: 14px;
+  }
+
+  .college-count h2 {
+    font-size: 22px;
+  }
+}
